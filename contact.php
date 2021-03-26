@@ -8,6 +8,7 @@ include 'fonction.php';
 <html>
 <?php
 $title='Contact';
+$reference_page='contact.php';
 include 'block/header.php';
 ?>
 <body>

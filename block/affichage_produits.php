@@ -20,7 +20,7 @@ $reponse=dbselect('SELECT * FROM produit WHERE 0=0');
             foreach($reponse AS $donnees){ 
 			?>
                 <tr>
-                    <td><?php echo $donnees['id'];?></td>
+                    <td><?php echo '<a href="modification.php?id='.$donnees['id'].'"> '.$donnees['id'].'</a>';?></td>
                     <td><?php echo $donnees['nom'];?></td>
                     <td><?php echo $donnees['prix'];?></td>
                     <td><?php echo $donnees['description'];?></td>

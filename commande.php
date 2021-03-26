@@ -8,6 +8,7 @@ include 'fonction.php';
 <html>
 <?php
 $title='Commander';
+$reference_page='commande.php';
 include 'block/header.php';
 ?>
     <body>
@@ -110,17 +111,20 @@ if(empty($tab_message_erreur)){
 
 		$lastid=dbinsert('commandes', $tab_valeur);
 		if ($lastid > 0){
-			echo '<div "class=add">Commande validé !</div>';
+			echo '<div "class=add" style="font-size: 40px">Commande validé !</div>';
 		} else {
 			echo '<div class="error_add">Erreur lors de la commande.</div>';
 		}
 }
 }
-?>
 
+//Formulaire
+		if ( (isset($_POST['valider']) AND (!empty($tab_message_erreur)))  OR   (!isset($_POST['valider'])) ){
+			
+?>
 		<p style='margin-left: 15px'>Remplissez le formulaire ci-dessous pour commander un produit</p>
 				
-<!-- Formulaire -->				
+			
 				<form action="" method="post" style="margin-right: 600px">
 				  <div class="grid-container">
 					<div class="grid-x grid-padding-x">
@@ -164,7 +168,12 @@ if(empty($tab_message_erreur)){
 				  </div>
 				  </div>
 				  </div>
-<!-- Fin du formulaire -->			
+<?php
+	}
+?>	
+
+<!-- Fin du formulaire -->	
+
 		</div>
 	</div>
 			

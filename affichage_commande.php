@@ -8,7 +8,7 @@ include 'fonction.php';
 <html>
 	<?php
 	$title='Commandes';
-	$reference_page='affichage_commandes';
+	$reference_page='affichage_commande.php';
 	include 'block/header.php';
 	?>
 	<body>

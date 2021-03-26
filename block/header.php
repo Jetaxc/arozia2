@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="css/foundation.css" />
 	<link rel="stylesheet" href="css/style.css" />
  
- 
 		
         <title><?php echo $title;?></title>
 </head>

@@ -1,8 +1,9 @@
 <!DOCTYPE HTML>
 <html>
 <?php
-$title="Menu d'Arozia";
+$title='Menu d\'Arozia';
 include 'block/header.php';
+include 'authentification.php'; 
 ?>
     <body>
 	
@@ -19,7 +20,7 @@ include 'block/header.php';
       </div>
     </div>
 
-	<div style="margin-left: 30px; font-weight: bold; font-size: 20px">
+	<div style="margin-left: 40px; font-weight: bold; font-size: 23px">
 	      <li><a href="commande.php" class="menu-list">Commander</a></li>
 		  <li><a href="info.php" class="menu-list">Infos</a></li>
 		  <li><a href="contact.php" class="menu-list"	>Contacts</a></li>

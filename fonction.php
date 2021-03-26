@@ -1,5 +1,5 @@
 <?php
-
+	//INSERT
 function dbinsert($table, $tab_valeur){
 	global $bdd;
 	$tab_cles_en_ligne=array_keys($tab_valeur);
@@ -10,6 +10,7 @@ function dbinsert($table, $tab_valeur){
 	return $bdd->lastInsertId();
 }
 
+	//UPDATE
 function dbupdate($table, $tab_valeur, $tab_where){
 	global $bdd;
 	$requete_en_ligne='';
@@ -38,8 +39,6 @@ function dbupdate($table, $tab_valeur, $tab_where){
 	$req->execute($tab_valeur_f);
 	return $req->rowCount();
 }
-
-
 
     //SELECT
 function dbselect($sql, $tab_valeurs='', $debug=false, $optnum=''){
