@@ -1,0 +1,109 @@
+ul  /*all*/
+{
+  color: green;
+}  
+
+.button /*all*/
+{
+	background:#0f9a02;
+}
+
+.button:visited
+{
+	background:#0f9a02;
+}
+
+.button:hover 
+{
+  background:#097502;
+}
+
+h1, p, form, .tableau /*all*/
+{
+	color:#135158;
+}
+
+.lien_reseaux
+{
+	color:#135158;
+	text-decoration:underline;
+	margin-left:10px;
+}
+
+.menu-list
+{
+	color:#135158; 
+	text-decoration:underline;
+}
+
+.validation
+{
+	background:#135158; 
+	color:white;
+}
+
+.form_affichage
+{
+	color: #135158; 
+	border: 2px solid;
+}
+
+
+
+/*
+
+.introduction
+{
+    font-weight: bold;
+    color: green;
+}
+
+p
+{
+    font-size: 20px;
+    opacity: 0.6;
+    text-shadow: 5px 5px 5px black;
+}
+
+p:hover
+{
+  color: green;
+}
+
+.titre 
+{
+    font-size: 70px; 
+    color: green; 
+    font-weight: bold;
+    text-decoration: underline;  
+    text-align: center;
+    border: 3px green solid;
+    border-radius: 30px / 75px;
+
+}
+
+.imageflottante
+{
+    float: left;
+}
+
+.dessous
+{
+    clear: both;
+}
+
+.plante
+{
+  color: green;
+}
+
+.plante:hover 
+{
+  color: red;
+}
+
+.plante:visited
+{
+  color: green;
+}
+*/
