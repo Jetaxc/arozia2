@@ -16,7 +16,9 @@ include 'block/header.php';
 		<div class="cell">
 
 	<?php
-		include 'block/topbar_admin.php';
+		include 'block/topbar.php';
+	$tupeuxpasser=$_SERVER['PHP_AUTH_PW'];
+	if($tupeuxpasser == "mini_1SNA"){
 	?>
 
 	<h1 style="margin-left: 20px">Ajouter un produit</h1>
@@ -95,6 +97,9 @@ if(isset($_POST['valider'])){
 <!-- Tableau des produits disponibles -->	
 		<?php 
 		include 'block/affichage_produits.php';
+}else{
+	include 'block/denied_access.php';
+}
 		?>
 							
 		<div class="logo_arozia"><p><img src="images/logo_arozia.png" alt="Logo arozia" /></p></div>

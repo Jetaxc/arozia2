@@ -1,22 +1,22 @@
 <?php
-
 if (!isset($tupeuxpasser)){
 	
-//Authetification
+//Authentification
     //Auth 1 - HTTP Basic Auth with 1 user attempt per browsing session (only 1 if he uses a regular browser)
+	
 if (!isset($_SERVER['PHP_AUTH_USER'])) {
 // send headers for the browser to show an authentication prompt box
 header('WWW-Authenticate: Basic realm="Codes requis"');
 header('HTTP/1.0 401 Unauthorized');
-//logic to send if the users cancels authentication
-echo "Entrez vos dientfiants";
+//logic to send if the users cancels authentification
+echo "Entrez vos identifiants";
 exit;
 } else {
 //we hardcode users and passwords in an array
 //we can get them from a database instead
 $users = array(
 "admin" => "mini_1SNA",
-"compta" => "");
+"client" => "client");
 
 
 
@@ -26,7 +26,7 @@ if (!array_key_exists($_SERVER["PHP_AUTH_USER"], $users) || $users[$_SERVER["PHP
 //finally you can reask for credentials instead of preventing further code execution
 header('WWW-Authenticate: Basic realm="Codes requis"');
 header('HTTP/1.0 401 Unauthorized');
-echo "Idientifiants incorrects";
+echo "Identifiants incorrects";
 exit;
 }
 }
@@ -35,10 +35,8 @@ exit;
 //recuperation POST de l'adherent
 
 if (isset($_POST['deconnexion'])){
-    unset($_SESSION['id_client']);
+    unset($_SESSION['droit']);
     }
-
-
+	
 }
-
 ?>

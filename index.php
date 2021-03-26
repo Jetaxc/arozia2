@@ -1,12 +1,19 @@
+<?php
+include 'block/session.php';
+?>
 <!DOCTYPE HTML>
 <html>
 <?php
 $title='Menu d\'Arozia';
 include 'block/header.php';
-include 'authentification.php'; 
+include 'block/authentification.php';
 ?>
     <body>
-	
+<?php
+if($users[$_SERVER["PHP_AUTH_USER"]] == "mini_1SNA"){
+include 'C:/xampp/htdocs/site-arozia/menu_admin.php';
+}else{
+?>
 		<div class="grid-x">
 		<div class="cell">
 
@@ -16,7 +23,6 @@ include 'authentification.php';
       <div class="top-bar-left">
         <ul class="menu">
           <li class="menu-text" style="font-size: 60px;">Menu</li>
-        </ul>
       </div>
     </div>
 
@@ -30,6 +36,10 @@ include 'authentification.php';
 	<style>
 	.logo_arozia{width: 110px; position: fixed; float: right; bottom: 0px; right: 0px; z-index:1;}
 	</style>
+<?php 
+}
 
+include 'block/deconnexion.php';
+?>
 </body>
 </html>

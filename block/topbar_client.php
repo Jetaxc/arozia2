@@ -6,7 +6,7 @@
 					$tab_reference=array();
 					$tab_reference[]=array('reference'=>'info.php', 'libelle'=>'Info');
 					$tab_reference[]=array('reference'=>'contact.php', 'libelle'=>'Contact');
-					$tab_reference[]=array('reference'=>'commande.php', 'libelle'=>'Commande');
+					$tab_reference[]=array('reference'=>'commande.php', 'libelle'=>'Commander');
 					
 					//Fin paramétrage
 					?>

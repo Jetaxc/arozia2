@@ -17,7 +17,7 @@ include 'block/header.php';
 		<div class="cell">
 
 	<?php
-		include 'block/topbar_client.php';
+		include 'block/topbar.php';
 	?>
 
 	<h1 style="margin-top: 20px; margin-left: 20px; font-size: 40px">

@@ -3,10 +3,15 @@
 <?php
 $title='Menu admin d\'Arozia';
 include 'block/header.php';
+include 'block/authentification.php';
 ?>
     <body>
 		<div class="grid-x">
 		<div class="cell">
+		<?php
+	$tupeuxpasser=$_SERVER['PHP_AUTH_PW'];
+	if($tupeuxpasser == "mini_1SNA"){
+		?>
 
 <div style="background:#135158; height:15px"></div>
 
@@ -23,11 +28,15 @@ include 'block/header.php';
 		  <li><a href="contact.php" target="_blank" class="menu-list">Contacts</a></li>
           <li><a href="commande.php" target="_blank" class="menu-list">Commander</a></li>
           <li><a href="ajout.php" class="menu-list">Ajouter</a></li>
-          <li><a href="modification.php?id=27" class="menu-list">Modifier</a></li>
+          <li><a href="produits.php" class="menu-list">Produits</a></li>
           <li><a href="affichage_commande.php" class="menu-list">Commandes</a></li>
           <li><a href="index.php" target="_blank" class="menu-list">Client menu</a></li>
 	</div>
-
+<?php
+}else{
+	include 'block/denied_access.php';
+}
+?>
 		<div class="logo_arozia"><p><img src="images/logo_arozia.png" alt="Logo arozia" /></p></div>
 	<style>
 	.logo_arozia{width: 110px; position: fixed; float: right; bottom: 0px; right: 0px; z-index:1;}

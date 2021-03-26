@@ -14,7 +14,9 @@ include 'fonction.php';
 	<body>
 
 	<?php
-		include 'block/topbar_admin.php';
+		include 'block/topbar.php';
+	$tupeuxpasser=$_SERVER['PHP_AUTH_PW'];
+	if($tupeuxpasser == "mini_1SNA"){
 	?>
 	
 	<h1 style="margin-left: 20px">Commandes</h1>
@@ -50,6 +52,9 @@ include 'fonction.php';
                 </tr>
             <?php
             }
+			}else{
+	include 'block/denied_access.php';
+}
             ?>
 	</tbody>
 			</table>

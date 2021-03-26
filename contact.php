@@ -17,7 +17,7 @@ include 'block/header.php';
 		<div class="cell">
 
 	<?php
-		include 'block/topbar_client.php';
+		include 'block/topbar.php';
 	?>
 
 	<h1 style="margin-top: 20px; margin-left: 20px; font-size: 40px">
@@ -28,7 +28,7 @@ include 'block/header.php';
 	      <li><a href="https://twitter.com/contact_arozia" target="_blank" class="lien_reseaux">Twitter</a></li>
 		  <li><a href="https://www.instagram.com/contact.arozia/" target="_blank" class="lien_reseaux">Intagram</a></li>
 		  <li><a href="https://www.facebook.com/Contact-Arozia-103151618352052" target="_blank" class="lien_reseaux">Facebook</a></li><br />
-		  <li target="_blank" class="lien_reseaux">contact.arozia@gmail.com</li>
+		  <li><span target="_blank" class="lien_reseaux">contact.arozia@gmail.com</li>
 	</div>
 
 		<div class="logo_arozia"><p><img src="images/logo_arozia.png" alt="Logo arozia" /></p></div>

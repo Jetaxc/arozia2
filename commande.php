@@ -1,5 +1,5 @@
 <?php
-session_start();
+include 'block/session.php';
 include 'bdd.php';
 include 'fonction.php';
 ?>
@@ -17,7 +17,7 @@ include 'block/header.php';
 		<div class="cell">
 		
 	<?php
-		include 'block/topbar_client.php';
+		include 'block/topbar.php';
 	?>
 
 		<h1 style='margin-left: 13px'>Commander un produit</h1>

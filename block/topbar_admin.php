@@ -6,10 +6,10 @@
 					$tab_reference=array();
 					$tab_reference[]=array('reference'=>'info.php', 'libelle'=>'Info');
 					$tab_reference[]=array('reference'=>'contact.php', 'libelle'=>'Contact');
-					$tab_reference[]=array('reference'=>'commande.php', 'libelle'=>'Commande');
+					$tab_reference[]=array('reference'=>'commande.php', 'libelle'=>'Commander');
 					$tab_reference[]=array('reference'=>'ajout.php', 'libelle'=>'Ajout');
-					$tab_reference[]=array('reference'=>'modification.php', 'libelle'=>'Modification');
-					$tab_reference[]=array('reference'=>'affichage_commande.php', 'libelle'=>'Affichage commande');
+					$tab_reference[]=array('reference'=>'produits.php', 'libelle'=>'Produits');
+					$tab_reference[]=array('reference'=>'affichage_commande.php', 'libelle'=>'Commandes');
 					
 					//Fin paramétrage
 					?>
@@ -31,8 +31,7 @@
 						}
 				?></li>
 					<?php } ?>
-				<li><a href="menu_admin.php"  class="button">Admin menu</a></li>
-				<li><a href="index.php" target="_blank" class="button">Client menu</a></li>
+				<li><a href="index.php" target="_blank" class="button">Menu</a></li>
 				<li><a href="#" style="pointer-events: none" class="button">...</a></li>
 				</ul>
 			</div>

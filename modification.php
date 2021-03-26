@@ -17,6 +17,8 @@ include 'block/header.php';
 	
 	<?php
 		include 'block/topbar_admin.php';
+	$tupeuxpasser=$_SERVER['PHP_AUTH_PW'];
+	if($tupeuxpasser == "mini_1SNA"){
 	?>
 	
 	<h1 style="margin-left: 20px">Modifier un produit</h1>
@@ -37,6 +39,11 @@ $id=$_GET['id'];
 $req=dbselect('SELECT * FROM produit WHERE id='.$id);
 $donnees=$req[0];
 //Fin paramétrage
+
+		if(!isset($id)){
+			include 'produits.php';
+			var_dump($id);
+		}else{
 
 //Test erreurs
 if(isset($_POST['valider'])){
@@ -99,11 +106,12 @@ if(isset($_POST['valider'])){
 		</div>
 			</div>
 <!-- Fin du formulaire -->		
-				
-<!-- Tableau des produits disponibles -->		
+					
 					<?php 
-				include 'block/affichage_produits.php';
-				
+					include 'block/affichage_produits.php';
+						}}else{
+	include 'block/denied_access.php';
+}
 				?>
 				
 		<div class="logo_arozia"><p><img src="images/logo_arozia.png" alt="Logo arozia" /></p></div>
