@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <?php
-$title='Menu d\'Arozia';
+$title="Menu d'Arozia";
 include 'block/header.php';
 ?>
     <body>
