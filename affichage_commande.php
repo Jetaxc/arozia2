@@ -1,5 +1,5 @@
 <?php
-session_start();
+include 'block/session.php';
 include 'bdd.php';
 include 'fonction.php';
 ?>

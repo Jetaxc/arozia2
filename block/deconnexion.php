@@ -1,31 +1,31 @@
+<?php
+include 'bdd.php';
+include 'fonction.php';
+?>
+
 <!DOCTYPE HTML>
 <html>
 <?php
-$title='Deconnexion';
-include 'header.php';
-include 'authentification.php';
+$title='Inscription';
+$reference_page='inscription.php';
+include 'block/header.php';
 ?>
 <body>
-<?php	
-var_dump($_SESSION['statut']);
-if(isset($_POST['deconnexion'])){	
-$_SESSION['statut']='';
 
-	}
+<?php
+
+	if(isset($_POST['deconnexion'])){
+		unset($_SESSION['pseudo']);
+		header("Refresh: 5; url=index.php");
+		echo "Vous avez été correctement déconnecté du site.<br><br><i>Redirection en cours, vers la page d'accueil...</i>";
+}
+
 ?>
-			
-				<form action="" method="post" style="">
-					<p>
-						<input type="submit" name="deconnexion" value="Déconnexion" class="button"/>
-					</p>
-				</form>
 
-<?php 
-	var_dump($_SESSION['statut']); 
-				
-				
-	if($_SESSION['statut']!=='connecte'){
+	<form method="post" action="" style="">
+	<div>
+	<input type="submit" name="deconnexion" value="Déconnexion" class="button">
+	</div>
+	</form>
 	
-	}
-?>
 </body>
