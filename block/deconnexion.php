@@ -7,14 +7,25 @@ include 'authentification.php';
 ?>
 <body>
 <?php	
-if(isset($_POST['deconnexion'])){
+var_dump($_SESSION['statut']);
+if(isset($_POST['deconnexion'])){	
+$_SESSION['statut']='';
 
 	}
 ?>
 			
 				<form action="" method="post" style="">
 					<p>
-						<input type="submit" name="deconnexion" value="Déconnexion" class="button"/><br />
+						<input type="submit" name="deconnexion" value="Déconnexion" class="button"/>
 					</p>
 				</form>
+
+<?php 
+	var_dump($_SESSION['statut']); 
+				
+				
+	if($_SESSION['statut']!=='connecte'){
+	
+	}
+?>
 </body>

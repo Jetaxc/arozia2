@@ -31,7 +31,7 @@
 						}
 				?></li>
 					<?php } ?>
-				<li><a href="index.php" target="_blank" class="button">Menu</a></li>
+				<li><a href="index.php" class="button">Menu</a></li>
 				<li><a href="#" style="pointer-events: none" class="button">...</a></li>
 				</ul>
 			</div>

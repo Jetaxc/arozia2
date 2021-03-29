@@ -28,15 +28,10 @@ header('WWW-Authenticate: Basic realm="Codes requis"');
 header('HTTP/1.0 401 Unauthorized');
 echo "Identifiants incorrects";
 exit;
+}else{
+	$_SESSION['statut']='connecte';
 }
-}
-
-
-//recuperation POST de l'adherent
-
-if (isset($_POST['deconnexion'])){
-    unset($_SESSION['droit']);
-    }
 	
+}
 }
 ?>
